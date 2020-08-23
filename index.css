@@ -5,13 +5,6 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 #particles {
   height: 100%;
   width: 100%;
@@ -69,10 +62,6 @@ body {
 }
 
 @media (max-width: 767px) {
-  body {
-    height: auto;
-  }
-
   .title {
     font-size: 25px;
   }
@@ -83,5 +72,14 @@ body {
 
   .image {
     width: 14rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 }
